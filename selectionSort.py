@@ -11,13 +11,13 @@ def selectionSort(array):
 		minimum = i #<-- giving the variable of minimum i
 		#creating a for loop
 		for j in range(i+1, n):
-
+			#if j is less the i 
 			if (array[j] < array[minimum]):
-
+				#swap then j = i
 				minimum = j
 
 		#Swap the minimum element with the first element of the unsorted part.
-
+		#
 		temp = array[i]
 		array[i] = array[minimum]
 		array[minimum] = temp
